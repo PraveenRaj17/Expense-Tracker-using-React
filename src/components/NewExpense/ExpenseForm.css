@@ -1,0 +1,76 @@
+.new-expense__controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    width: 100%;
+    @media(min-width: 768px) {
+      width: auto;
+    }
+  }
+  
+  .new-expense__control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    width: 100%;
+    @media(min-width: 768px) {
+      width: auto;
+    }
+  }
+  
+  .new-expense__control input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 20rem;
+    max-width: 100%;
+    width: 100%;
+    @media(min-width: 768px) {
+      width: auto;
+    }
+  }
+  
+  .new-expense__actions {
+    text-align: right;
+    width: 100%;
+    @media(min-width: 768px) {
+      width: auto;
+    }
+  }
+
+  /* When input is invalid */
+  /* Used in dynamic styling - refer to Amount in form */
+  .new-expense__control.invalid input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    border-color: red;
+    background-color: #ffd7d7;
+    width: 20rem;
+    max-width: 100%;
+    width: 100%;
+    @media(min-width: 768px) {
+      width: auto;
+    }
+  }
+
+  /* When input is invalid (for label) */
+  /* Used in dynamic styling - refer to Amount in form */
+  .new-expense__control.invalid label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: red;
+    width: 100%;
+    @media(min-width: 768px) {
+      width: auto;
+    }
+  }
+
+  /* @media(min-width: 768px){
+    width: auto;
+  } */
